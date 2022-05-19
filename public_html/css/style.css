@@ -1,0 +1,2522 @@
+/*************Globals**************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: boder-box;
+    -ms-box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    max-width: 3000px;
+    min-width:300px;
+    /*background: url(../img/back.jpg)repeat 100%;
+    background-size: cover;
+    background-attachment: fixed;*/
+    background: url(../img/old_map.png)repeat 0 0;
+   
+  
+}
+li{list-style: none;}
+
+a{text-decoration:none;
+  color:#000;}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/*************INDEX**************/
+#logo{
+    text-align: center;
+    width: 1000px;
+    margin: 0px auto;
+    height: 1000px;
+    position: relative;
+    top:100px;
+    overflow: hidden;
+}
+.btn_log a:hover{
+    color: #F2EBDB;
+    background: green;
+}
+.btn_log a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    color:#333;
+    display: inline-block;
+    margin: 20px;
+    width: 20%;
+    border: 1px solid #F2EBDB;
+    background: none;
+    border-radius: 10px;
+}
+
+#logo .img img{
+    width: 25%;
+    margin-top: 40px;
+}
+
+#logo p{
+    margin: 20px 0;
+    color: #333;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#logo h1,h2{
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    color: #333;
+}
+#logo h1{
+    font-size: 180px;
+
+}
+
+#logo h2{
+    font-size: 90px;
+}
+/*************MENU**************/
+#second{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: -20px;
+    z-index:99999;
+    
+
+}
+
+#second .logo{
+    background: url(../img/logo10.png) no-repeat center;
+    position: relative;
+    z-index:5;
+    top:5px;
+    left: -50px;
+    padding-right:5%; 
+    float: left;
+    width: 10%;
+    height: 150px;
+    background-size: 80px;
+
+}
+
+#velo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: 100%;
+    top:0px;
+    z-index: 1;
+    background:#FCB447;
+    display: none;
+    
+    
+}
+
+#menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    z-index: 99;
+    font-weight: bold;
+    padding-top: 10%;
+    right:-100%;
+    font-size: 30px;
+}
+
+#menu ul li{
+    padding-bottom: 50px;
+    font-size: 60px;
+    letter-spacing: -2px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+    
+}
+
+#btn_menu{
+    float: right;
+    cursor: pointer;
+    margin: 40px;
+    width: 100px;
+    height: 60px;
+    background:url(../menu.png) no-repeat center;
+    background-size: 20px;
+}
+/************RegisterForm And LoginForm**************/
+
+.form{
+    position: relative;
+    top:10%;
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+}
+
+.form a{
+    color:#333;
+    font-family: 'Amatic SC', cursive;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.form h3{
+    color:#333;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 40px;
+   /*background: url(../img/texture_bg.jpg)repeat;*/
+    width: 90%;
+    margin: 0 auto;
+}
+
+.message{
+    text-align: center;
+    color:#333;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+
+}
+input,textarea {
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 80px;
+    width: 50%;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background: none;
+    color:#333;
+    line-height: 40px;
+    margin: 10px auto;
+    font-size: 20px;
+
+}
+
+[type='checkbox']{
+    display: inline;
+    width: 30px;
+}
+
+
+
+[type='text'] {
+    padding-left: 1em;
+    color:#333;
+}
+[type='submit'] {
+    display: block;
+    color: #F2EBDB;
+    background-color: #222;
+    font-weight: 600;
+    width: 20%;
+}
+
+textarea:focus{
+    border: 0;
+    border-bottom: 5px solid #333;
+    color: #2c3e50;
+    outline: none;  
+}
+[type='text']:focus {
+    border: 0;
+    border-bottom: 5px solid #333;
+    color: #2c3e50;
+    outline: none;
+}
+
+#log{
+    color:#333;  
+}
+#con, #con_1, #con_2, #con_3{
+    color:#333;
+    width: 80%;
+    margin-top: 20px;
+}
+.form a:hover{
+    color:#000;
+}
+.text {
+    display: inline-block;
+    width: 50%;
+    height: 80%;
+}
+
+.foto_reg{
+   
+}
+.foto_reg img{
+    width: 20%;
+    
+}
+/******Listado sidras********/
+
+.foto{
+    
+    margin: 0 auto;
+    position: relative;
+    top:15px;
+    margin-bottom: 40px;
+}
+
+
+.foto p{
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 50px;
+  color:#000;
+  width: 100%;
+  
+}
+
+.foto img{
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+.cider_container{
+    width: 1800px;
+    margin:0 auto;
+    
+    
+}
+
+.wrap{
+    width: 1600px;
+    height: 40%;
+    padding: 20px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+
+.cider{
+    width:50%;
+    
+    background: url(../img/greenBack.png)no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border:2px solid #333;
+    border-radius: 10px;
+    float: left;
+}
+
+
+
+.cider h2{
+    font-size: 28px;
+    margin-top: 60px;
+    font-family:'Josefin Sans', sans-serif;
+    
+    width: 50%;
+    float: right;
+    
+}
+
+.cider h2:hover{
+    color: #eee;
+}
+
+.cider img{
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+
+
+.cider h3{
+font-size: 18px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+}
+.chincheta{
+    float: none;
+    clear: both;
+    width: 100%;
+    height: 40px;
+}
+
+.cider:hover{
+  background: url(../img/botella.png) no-repeat 150px 0px #FCB447;
+}
+
+.cider:active{
+    position: relative;
+    top:2px;
+}
+/*******************RATING**********************/
+.container{
+    width: 1100px;
+    height: 1000px;
+    position: relative;
+    top: 10%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrap_2{
+    width: 100%;
+    height: 100%;
+}
+
+#one{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#one img{
+    margin-top: 30px;
+    border:2px solid #333;
+    border-radius: 10px;
+    background:url(../img/greenBack.png);
+}
+
+#llagar{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color:#333;
+    text-align: center;
+}
+
+#one h3{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Amatic SC', cursive;
+    background: url(../img/texture_bg.jpg)repeat 0 0;
+    width: 93%;
+    color:#333;
+    margin: 0 auto;
+}
+
+
+#one h2{
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 80px;
+    color:#333;
+    
+    
+}
+
+#one p{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#333;
+}
+
+.cider_rate{
+    width: 300px;
+    height: 100px;
+    margin: 20px auto;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cider_rate a{
+    font-size: 50px;
+    display:inline-block;
+    color:#333;
+}
+.cider_rate a:hover{
+    color:#CDA92F;
+}
+
+.btn a{
+    color:#333;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #333;
+    background: none;
+    border-radius: 10px;
+}
+
+.btn a:hover{
+    color:#F2EBDB;
+    background: green;
+    transition: all .5s ease;
+}
+
+.btn{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+#llagar:hover{
+    color:infotext;
+
+}
+
+/****************************RATED*************************/
+.foto_rat img{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+.container_rate{
+    position: relative;
+    margin: 0 auto;
+    width: 40%;
+    height: 350px;
+    top: 20%;
+    /*overflow: hidden;*/
+}
+#rated p{
+    text-align: center;
+    line-height: 150px;
+    font-size: 60px;
+    font-family: 'Amatic SC', cursive;
+    color:#333;
+    /*background: url(../img/texture_bg.jpg)repeat 0 0;*/
+}
+
+.btn_rated{
+    margin: 0 auto;
+    width: 450px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+.btn_rated a{
+    width: 35%;
+    font-size:18px;
+    padding: 20px;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#333;
+    font-weight: bold;
+    border: 1px solid #333;
+    background: none;
+    border-radius: 10px;
+}
+
+.btn_rated a:hover{
+    color:#F2EBDB;
+    background: green;
+    transition: all .5s ease;
+}
+/**************STARTS*********************************/
+
+.ec-stars-wrapper {
+
+    font-size: 0;
+
+    display: inline-block;
+}
+.stars a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 40px;
+
+    color: #eee;
+}
+
+.stars:hover a {
+    color:#CDA92F;
+}
+
+.stars > a:hover ~ a {
+    color: #eee;
+}
+/******************BUSCADOR********************/
+
+.foto_bus img{
+    width: 20%;
+}
+.buscador{
+    position: fixed;
+    top: 30%;
+    right: 30%;
+    bottom: 30%;
+    left: 30%;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.buscador h3{
+    font-family: 'Amatic SC', cursive;
+    color:  #333;
+    font-size: 40px;
+    margin: 30px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    /*background: url(../img/texture_bg.jpg)repeat;*/
+}
+
+#search{
+    width: 70%;
+    color:  #333;
+    
+}
+.buscador  .buscar{
+    width: 20%;
+    margin: 0 auto;
+    padding: 10px;
+    background: none;
+    color:#333;
+    line-height: 18px;
+    display: inline-block;
+
+}
+
+.buscar:hover{
+    color:#F2EBDB;
+    background: green;
+    transition: all .5s ease;
+}
+
+.buscador p{
+    font-family: 'Amatic SC', cursive;
+    color:  #F2EBDB;
+    font-size: 20px;
+}
+
+.message{
+    color:#333;
+}
+/**************************CONTACT**********************/
+
+#contact{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top:10%;
+    width: 60%;
+    height: 500px;
+}
+
+.formCont h2{
+    font-family: 'Amatic SC', cursive;
+    color:  #333;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    background: url(../img/texture_bg.jpg)repeat;
+    margin:0 20px;
+}
+
+.formCont{
+    width: 55%;
+    height: 100%;
+    margin-top: 30px;
+    float: left;
+    border-right: 1px solid #333;
+
+}
+
+.formCont  p{
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.error{
+    border-bottom: 5px solid #333;
+    border-radius: 5px;
+
+}
+
+[class^="txt_"]{
+
+    display: none;
+}
+.txt_error{
+    color:#333;
+    font-family: 'Amatic SC', cursive;
+
+}
+.txt_ok{
+    color:#333;
+    font-family: 'Amatic SC', cursive;
+}
+
+#text{
+    text-align: justify;
+    width: 35%;
+    margin-top: 20px;
+    float: right;
+    background: url(../img/echandoSidra.jpg)no-repeat;
+    background-attachment: fixed;
+    background-size: 80%;
+    height: 500px;
+    margin-right: 60px;
+    margin-bottom: 300px;
+}
+
+#text p{
+    width:100%;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #333;
+    font-size: 18px;
+    padding: 20px;
+    background: url(../img/texture_bg.jpg)repeat;
+    position: relative;
+    top:90%;
+}
+/*=======================FOOTER============================*/
+
+footer{
+    color:#333;
+    border:5px solid #333;
+    position: relative;
+    bottom: 0;
+    width: 30%;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+footer ul li {
+    float: left;
+    width: 33.3%;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 25px;
+    color: #F2EBDB;
+    border-right: none;
+    background: rgba(0,0,0,.4);
+
+}
+
+footer ul li a{
+    color: #F2EBDB;
+}
+
+#face{
+    border-right: 1px solid #F2EBDB;
+}
+
+#twit{
+    border-right: 1px solid #F2EBDB;
+}
+
+
+
+footer a:hover{
+
+    color:#000;
+
+}
+
+footer li:hover{
+    background:#FCB447;
+}
+
+/*************back to top*********************/
+
+.btn_top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    
+    
+}
+
+
+/**************************Perfil*****************************/
+
+.perfil_container{
+    margin: 0px auto;
+    position: relative;
+    top:10%;
+    width: 1000px;
+    height: 100%;
+   
+}
+#perfil{
+    overflow: hidden;
+
+}
+#perfil h2, h3{
+    font-family: 'Amatic SC', cursive;
+    color:#333;
+    margin: 10px;
+    text-align: center;
+}
+
+#perfil h2{
+    font-size: 50px;
+    background: url(../img/texture_bg.jpg);
+}
+
+#perfil h3{
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn_perfil{
+    margin: 0 auto;
+    width: 450px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn_perfil a{
+    width: 40%;
+    font-size:18px;
+    padding: 20px;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#333;
+    font-weight: bold;
+    border: 1px solid #333;
+    background: none;
+    border-radius: 10px;
+
+}
+.btn_perfil a:hover{
+    color:#eee;
+    background: green;
+    transition: all .5s ease;
+}
+
+#perfil .perfil_cider{
+    /*background: tomato;*/
+    margin-bottom: 20px;
+}
+
+
+#perfil .perfil_cider p{
+    color:#333;
+    font-family: 'Amatic SC', cursive;
+    font-weight:bold;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: url(../img/greenBack.png)repeat;;
+   border-radius: 20px;
+}
+
+#perfil .perfil_cider a{
+    display: block;
+   text-align: right;
+    font-size: 12px;
+    color:#F2EBDB ;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: 20px;
+    border: 2px solid #333;
+    width: 100%;
+    background: #333;
+    
+}
+
+#perfil .perfil_cider img{
+  
+  display: block;
+ float: left;
+}
+
+.texto{
+    background: tomato;
+    width: 20%;
+    height: 10%;
+    
+}
+
+.perfil_container .wrap_3 .cab{
+    width: 20%;
+}
+
+
+/**********SEARCH**********/
+.foto_search{
+    
+    padding-top: 100px;
+}
+.foto_search img{
+    width: 10%;
+    display: block;
+    margin: 0 auto;
+    
+}
+#sm{
+    width: 80%;
+    margin: 0px auto;
+}
+#sm p{
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    margin: 0px auto;
+    /*background: url(../img/texture_bg.jpg);*/
+    display: block;
+    width: 50%;
+    height: 200px;
+    line-height: 200px;
+    font-size: 40px;
+}
+
+.search_mo{
+    text-align: center;
+    margin:0px  auto;
+    width: 800px;
+    height: 100%;
+    position: relative;
+    top:15px;
+    
+
+}
+.search_mo h2{
+    font-size: 50px;
+    /*background: url(../img/texture_bg.jpg);*/
+
+}
+.search_mo li{
+    text-align: center;
+    height: 50px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    width: 80%;
+    background: url(../img/greenBack.png)repeat;
+    margin: 20px auto;
+    line-height: 50px;
+}
+
+.search_mo a{
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+}
+
+.search_mo a:hover{
+    color: #F2EBDB;
+}
+
+
+/***********************MediaQueries**************************************/
+
+/**********INDEX**********/
+
+@media (max-width:2067px) and (min-width:1663px){
+    #logo{
+        width: 900px;
+        height: 900px;
+    }
+
+    #logo h1{
+        font-size:140px; 
+    }
+
+    #logo h2{
+        font-size:80px;  
+    }
+
+    #logo p{
+        font-size:38px; 
+    }
+    .btn_log a{
+        font-size:20px
+
+    }
+}
+
+@media (max-width:1662px) and (min-width:1392px){
+    #logo{
+        width: 800px;
+        height: 800px;
+    }
+
+    #logo h1{
+        font-size:135px; 
+    }
+
+    #logo h2{
+        font-size:75px;  
+    }
+
+    #logo p{
+        font-size:35px;
+
+    }
+
+    .btn_log a{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+@media (max-width:1391px) and (min-width:1038px){
+    #logo{
+        width: 700px;
+        height: 700px;
+    }
+
+    #logo h1{
+        font-size:130px;  
+    }
+    #logo h2{
+        font-size:70px; 
+    }
+
+    #logo p{
+        font-size:32px;
+    }
+
+    .btn_log a{
+        font-size: 20px; 
+    }
+
+}  
+
+@media (max-width:1037px) and (min-width:827px){
+    #logo{
+        width: 600px;
+        height: 700px;
+    }
+
+    #logo h1{
+        font-size:125px;  
+    }
+    #logo h2{
+        font-size:65px; 
+    }
+
+    .btn_log a{
+        font-size: 20px;
+
+    }
+
+    #logo p{
+        font-size:30px;
+    }
+}  
+
+@media (max-width:826px) and (min-width:641px){
+    #logo{
+
+        width: 500px;
+        height: 600px;
+    }
+
+    #logo h1{
+        font-size:118px;  
+    }
+
+    #logo h2{
+        font-size:50px; 
+    }
+
+    .btn_log a{
+        font-size: 20px;
+        padding: 10px;
+
+    }
+
+    #logo p{
+        font-size:20px;
+    }
+}
+@media (max-width:640px) and (min-width:461px){
+    #logo{
+        width: 400px;
+        height: 480px;
+    }
+
+    #logo h1{
+        font-size:90px;  
+    }
+
+    #logo h2{
+        font-size:40px; 
+    }
+
+    .btn_log a{
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    #logo p{
+        font-size:17px;
+    }
+}
+@media (max-width:460px) and (min-width:200px){
+    #logo{
+        width: 350px;
+        height: 450px;
+        
+    }
+
+    #logo h1{
+        font-size:70px;  
+    }
+
+    #logo h2{
+        font-size:30px; 
+    }
+
+    .btn_log a{
+        font-size: 14px;
+        padding: 7px;
+        border-radius: 40px;
+    }
+
+    #logo p{
+        font-size:14px;
+    }
+
+    .btn_log a:hover{
+        background:#FCB447; 
+    }
+
+}
+
+/*******************Listado****************/   
+@media (max-width:1720px) and (min-width:1590px){
+  .wrap{
+        width: 1000px;
+       
+    }
+
+   .cider{
+        width: 100%;
+    }
+    #second .logo{
+        width: 8%;
+        background-size:70px;
+        left: -20px;
+        top:0;
+
+    }
+}
+@media (max-width:1591px) and (min-width:1423px){
+    
+
+    .cider_container{
+        width: 1100px;
+
+    }
+
+    .wrap{
+        width: 1100px;
+   }
+   .cider{
+        width: 100%;
+    }
+
+    
+
+    #second .logo{
+        width: 8%;
+        background-size:70px;
+        left: -20px;
+        top:0;
+    }
+
+}
+
+@media (max-width:1423px) and (min-width:1314px){
+    
+    .cider_container{
+        width: 1000px;
+        
+    }
+
+    .wrap{
+        width: 1000px;
+       
+    }
+
+    .cider{
+        width: 100%;
+    }
+
+
+    #second .logo{
+        width: 8%;
+        background-size:70px;
+        left: -9px;
+        top:0;
+    }
+    
+    #menu ul li{
+       font-size: 70px; 
+    }
+    
+   
+
+}
+
+@media (max-width:1313px) and (min-width:1175px){
+    
+    .cider_container{
+        width: 900px;
+        
+    }
+
+    .wrap{
+        width: 900px;
+ 
+    }
+ .cider{
+        width: 100%;
+    }
+    
+
+
+    #second .logo{
+        width: 8%;
+        background-size:70px;
+
+        left: 9px;
+        top:0;
+    }
+    footer{
+        border:3px solid #F2EBDB;
+        border-radius: 8px;
+        width: 900px;
+        height: 70px;
+
+    }
+
+    footer ul li{
+        font-size: 22px;
+        height: 120px;
+        line-height: 65px;
+
+    }
+
+    #face img, #twit img, #gmail img{
+        width: 11%;
+
+    }
+     #menu ul li{
+      font-size: 62px; 
+    }
+
+}
+
+@media (max-width:1174px) and (min-width:1121px){
+    
+
+
+    .cider_container{
+        width: 800px;
+        
+    }
+
+    .wrap{
+        width: 800px;
+        
+    }
+
+    .cider{
+        width: 100%;
+        
+    }
+    #second .logo{
+        width: 8%;
+        background-size:70px;
+        left: 9px;
+        top:0;
+    }
+
+    footer{
+        border:3px solid #F2EBDB;
+        border-radius: 8px;
+        width: 670px;
+        height: 70px;
+
+    }
+
+    footer ul li{
+        font-size: 19px;
+        height: 120px;
+        line-height: 65px;
+    }
+
+    #face img, #twit img, #gmail img{
+        width: 10%;
+
+    }
+}
+
+@media (max-width:1121px) and (min-width:918px){
+    
+     .foto p{
+        font-size: 32px;
+    }
+   
+    .cider_container{
+        width: 600px;
+    }
+
+    .wrap{
+        width: 600px;
+
+    }
+
+    .cider{
+       
+        
+        width: 100%;
+       
+    }
+    #second .logo{
+        width: 8%;
+        background-size:70px;
+        top:0;
+        left: 9px;
+
+    }
+    
+
+    footer{
+        border:4px solid #F2EBDB;
+        border-radius: 8px;
+        width: 600px;
+        height: 70px;
+
+    }
+
+    footer ul li{
+        font-size: 19px;
+        height: 120px;
+        line-height: 65px;
+
+    }
+
+    #face img, #twit img, #gmail img{
+        width: 15%;
+
+    }
+    
+     #menu ul li{
+       font-size: 60px; 
+    }
+
+
+}
+@media (max-width:917px) and (min-width:761px){
+   
+    .cider_container{
+        width: 500px;
+    }
+
+    .wrap{
+        width: 500px;
+
+    }
+
+    .cider{
+        width: 100%;
+        height: 150px;
+        
+        
+    }
+
+    #cider img{
+        height: 150px;
+        width: 150px;
+    }
+    #second .logo{
+        width: 10%;
+        background-size:70px;
+        left: 9px;
+        top:0;
+    }
+
+
+    footer{
+        border:4px solid #F2EBDB;
+        border-radius: 8px;
+        width: 500px;
+        height: 70px;
+
+    }
+
+    footer ul li{
+        font-size: 19px;
+        height: 120px;
+        line-height: 65px;
+    }
+
+    #face img, #twit img, #gmail img{
+        width: 15%;
+    }
+    
+     #menu ul li{
+       font-size: 50px; 
+    }
+     .foto p{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:760px) and (min-width:641px){
+   
+    .cider_container{
+        width: 400px;
+    }
+
+    .wrap{
+        width: 400px;
+
+    }
+
+    .cider{
+        width: 100%;
+        height: 50%;
+        
+}
+    
+    .cider h2{
+        margin-top: 40px;
+         font-size: 20px;
+    }
+    
+    .cider img{
+        width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    }
+
+    
+    #second .logo{
+        width: 10%;
+        background-size:70px;
+        left: 9px;
+        top:0;
+    }
+    
+
+    footer{
+        border:4px solid #F2EBDB;
+        border-radius: 8px;
+        width: 400px;
+        height: 70px;
+
+    }
+
+    footer ul li{
+        font-size: 19px;
+        height: 120px;
+        line-height: 65px;
+
+    }
+
+    #face img, #twit img, #gmail img{
+        width: 15%;
+
+    }
+     #menu ul li{
+       font-size: 40px; 
+    }
+     .foto p{
+        font-size: 30px;
+    }
+
+
+}
+
+
+@media (max-width:640px) and (min-width:537px){
+.cider_container{
+        width: 300px;
+
+    }
+
+    .wrap{
+        width: 300px;
+
+    }
+
+    .cider{
+        width: 100%;
+     
+        
+    }
+      .cider h2{
+        margin-top: 40px;
+         font-size: 18px;
+    }
+    
+    .cider img{
+        width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    }
+
+   
+
+    #cider:hover{
+        background: none;
+    }
+    #second .logo{
+        display: none; 
+    }
+
+    
+    footer{
+        border:.2px solid #F2EBDB;
+        width: 49%;
+        position: relative;
+
+        height: 70px;
+    }
+
+    footer{
+        border-radius: 8px;
+        width: 295px; 
+    }
+
+    footer ul li{
+        font-size: 19px;
+        height: 120px;
+        line-height: 65px;
+    }
+
+    #face img, #twit img, #gmail img{
+        width: 15%;
+
+    }
+     .foto p{
+        font-size: 25px;
+    }
+   
+}
+
+@media (max-width:536px) and (min-width:300px){
+  .foto p{
+        font-size: 25px;
+    }
+    
+    .foto img{
+        width: 20%;
+    }
+
+    .cider_container{
+        width: 300px;
+    }
+
+    .wrap{
+        width: 300px;
+        
+    }
+
+  
+
+    .cider{
+        width: 100%;
+       
+    }
+    .cider h2{
+        margin-top: 40px;
+         font-size: 17px;
+         width: 50%;
+    }
+    
+    .cider img{
+        width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    }
+
+    /*#cider:hover{
+        color: #FCB447;
+    }*/
+
+    
+    #btn_menu{
+        margin: -25px;
+        position: relative;
+        top:40px;
+    }
+
+    .btn_top{
+        bottom: 0;
+        border-radius:0;
+        right: 0;
+        padding: 0;
+        background: none;
+    }
+    #second .logo{
+        display: none; 
+    }
+
+    footer{
+        border:.2px solid #F2EBDB;
+        border-radius: 8px;
+        width: 295px;
+        height: 70px;
+    }
+
+    footer ul li{
+        font-size: 18px;
+        height: 120px;
+        line-height: 65px;
+
+    }
+
+    #face img, #twit img, #gmail img{
+        width: 15%;
+    }
+    
+    .cider:hover{
+  background: url(../img/botella.png) no-repeat 100px 0px #FCB447;
+}
+
+}
+/***********rating************/
+
+@media (max-width:2263px) and (min-width:1231px){
+    .container{
+        width: 800px;
+        height: 850px;
+        
+    }
+
+    #one img{
+        width: 32%;
+        height: 32%;
+    }
+
+    #one p{
+        font-size: 28px;
+        margin: 10px;
+    }
+    #one h2{
+        font-size: 70px;
+    }
+    #one h3{
+        font-size: 100px;
+    }
+    .cider_rate{
+        width: 400px;
+        height: 120px;
+        margin-bottom: 0;
+    }
+
+    .cider_rate a{
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+    .btn a{
+        width: 20%;
+        height: 150px;
+        border-radius: 10px;
+        height: 100%;
+        font-size: 20px;
+        display: inline-block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+
+}
+
+@media (max-width:1230px) and (min-width:900px){
+    .container{
+        top:7%;
+        width: 750px;
+        height: 850px;
+
+    }
+    #one{
+        top:0;
+    }
+    #one img{
+        width: 38%;
+        height: 30%;
+
+    }
+
+    #one p{
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    #one h2{
+        font-size: 60px; 
+        
+    }
+
+    #one h3{
+        font-size: 100px;
+        
+    }
+
+    #llagar{
+
+        margin-top: 20px;
+    }
+
+    .cider_rate{
+        width: 400px;
+        height: 100px;
+        margin-top:35px;
+    }
+
+    .cider_rate a{
+        font-size: 40px;
+    }
+
+    .btn a{
+        font-size: 20px;
+        margin-top: 20px;
+
+    }
+
+}
+
+@media (max-width:899px) and (min-width:641px){
+    .container{
+        width: 600px;
+        height:700px;
+        
+   }
+    #one{
+        width: 100%;
+        height: 100%;
+    }
+    #one h3{
+        font-size: 70px; 
+        
+    }
+
+    #one h2{
+        font-size: 50px;
+        
+    }
+
+    #one img{
+        float: left;
+        margin-left: 30px;
+        width: 40%;
+        height: 35%;
+    }
+
+    #llagar{
+        margin-top: 30px;
+    }
+    #one p{
+        font-size: 20px;
+        margin-top: 50px;
+
+    }
+    .cider_rate{
+        width: 100%;
+
+    }
+    .cider_rate a{
+        clear: both;
+        font-size: 50px;
+    }
+    .btn{
+        clear: both;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .btn a{
+        width: 30%;
+        height: 100%;
+        font-size: 15px;
+        display:inline-block;
+        margin: 0 auto;
+        margin-top: 50px;
+
+    }
+}
+@media (max-width:640px) and (min-width:300px){
+    .container{
+        width: 350px;
+        height:500px;
+        margin: 0 auto;
+    }
+    #one{
+        top:0;
+    }
+    #one h3{
+        font-size: 66px;
+        
+    }
+
+    #one h2{
+        font-size: 38px;
+        
+        
+    }
+
+    #one img{
+        float: left;
+        margin-left: 20px;
+        width: 40%;
+        height: 25%;
+        
+    }
+
+    #llagar{
+      font-size: 15px;
+    }
+
+    #one p{
+        margin-right: 5px;
+        font-size: 16px;
+        margin-top: 50px;
+    }
+
+    .cider_rate{
+        margin-right: 5px;
+        
+    }
+
+    .cider_rate a{
+        clear: both;
+        width: 9%;
+        font-size: 28px;
+        display: inline-block;
+    }
+
+    .btn{
+        margin-top: 20px;
+        width: 65%;
+        margin: 20px auto;
+    }
+
+    .btn a{
+        width: 50%;
+        border-radius: 20px;
+        height: 20px;
+        line-height: 1px;
+        font-size: 15px;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 15px;
+        margin-top: 10px;
+        background: #FCB447;
+    }
+}
+/***********Rated************/
+@media (max-width:1917px) and (min-width:1538px){
+    .container_rate{
+        width: 40%;
+        height: 400px;
+
+    }
+
+    #rated p{
+        font-size: 45px; 
+    }
+
+    .btn_rated{
+        width: 600px; 
+    }
+
+    .btn_rated a{
+        width: 25%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1537px) and (min-width:900px){
+    .container_rate{
+        width: 50%;
+        height: 350px;
+    }
+
+    #rated p{
+        font-size: 40px; 
+    }
+
+    .btn_rated a{
+        font-size: 16px;
+        text-align: center;
+        width: 40%;
+        height: 60px;
+        display: inline-block;
+    }
+}
+
+@media (max-width:899px) and (min-width:641px){
+    .container_rate{
+        width: 48%;
+        height: 350px;
+    }
+
+    #rated p{
+        font-size: 30px;
+    }
+    .btn_rated{
+        width: 100%;
+    }
+    .btn_rated a{
+        font-size: 15px;
+        width: 45%;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:640px) and (min-width:300px){
+
+    .container_rate{
+        width: 250px;
+
+    }
+
+    #rated p{
+        font-size: 28px;
+    }
+
+    .btn_rated{
+        width: 70%;
+    }
+
+    .btn_rated a{
+        width: 100%;
+        border-radius: 20px;
+        height: 20px;
+        line-height: 3px;
+        font-size: 15px;
+        display: inline-block;
+        margin: 2px auto;
+        padding: 18px;
+        background: #FCB447;       
+    }
+
+}
+
+/***********Buscador************/
+@media (max-width:1274px) and (min-width:1116px){
+    .foto_bus img{
+         width: 30%;
+       }
+       
+    .buscador{
+        width: 600px;
+        left: 20%;
+        right: 20%;
+   } 
+  
+}
+
+@media (max-width:1115px) and (min-width:900px){
+    
+    .foto_bus img{
+         width: 30%;
+       }
+    
+    .buscador{
+        width: 500px;
+        left: 23%;
+      
+    } 
+   
+}
+
+@media (max-width:899px) and (min-width:842px){
+    .foto_bus img{
+         width: 30%;
+       }
+    .buscador{
+        width: 500px;
+        left: 20%;
+       
+    } 
+
+}
+
+@media (max-width:841px) and (min-width:641px){
+     .foto_bus img{
+         width: 30%;
+       }
+    .buscador{
+        width: 400px;
+        height: 300px;
+        left: 26%;
+        right: 26%;
+        
+        
+    } 
+
+}
+
+@media (max-width:640px) and (min-width:300px){
+     
+    .foto_bus img{
+    width: 40%;
+   }
+
+    .buscador{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        top:20%;
+       right: 0;
+        left: 0;
+        
+  } 
+
+    #second .logo{
+        display: none;
+    }
+
+    .buscador  .buscar{
+        width: 25%;
+        background: #FCB447;
+        border-radius: 20px;
+        padding: 5px;
+       font-size: 16px;
+     
+    }
+    
+    .buscador h3{
+        font-size: 38px;
+        
+    }
+    #search{
+        width: 90%;
+        
+    }
+  
+}
+
+
+/***********Register and login form************/
+@media (max-width:1499px) and (min-width:1363px){
+    .form{
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media (max-width:1362px) and (min-width:1165px){
+    .form{
+        width: 600px;
+        height: 400px;
+    }
+
+}
+
+@media (max-width:1164px) and (min-width:812px){
+    .form{
+        width: 500px;
+        height: 300px;
+    }
+
+    .form a{
+        font-size: 18px;
+    }
+
+    .form h3{
+        font-size: 30px; 
+    }
+    #reg{
+        width: 300px; 
+    }
+
+    #log{
+        width: 320px;
+    }
+}
+@media (max-width:811px) and (min-width:641px){
+    .form{
+        width: 400px;
+        height: 300px;
+    }
+    .form a{
+        font-size: 16px;
+    }
+    .form h3{
+        font-size: 30px; 
+    }
+    #reg{
+        width: 300px; 
+    }
+    #participa{
+        width: 150px;
+    }
+
+    #log{
+        width: 300px;
+    }
+
+}
+
+@media (max-width:640px) and (min-width:300px){
+    .form{
+        width: 300px;
+        height: 300px;
+    }
+
+    .form a{
+        font-size: 16px;
+    }
+
+    .form h3{
+        font-size: 30px; 
+    }
+    #reg{
+        width: 250px; 
+    }
+
+    #participa{
+        width: 100px;
+    }
+
+    #log{
+        width: 250px;
+    } 
+
+}
+
+/***********Perfil************/
+
+@media (max-width:3000px) and (min-width:1246px){
+
+    footer{
+        border:3px solid #F2EBDB;
+        border-radius: 8px;
+        width: 800px;
+        height: 70px;
+        margin-top: -10px;
+    }
+    footer ul li{
+        font-size: 25px;
+        height: 120px;
+        line-height: 70px;
+    }
+
+    #face img, #twit img, #gmail img{
+        width: 10%;
+
+    } 
+}
+
+@media (max-width:1246px) and (min-width:1001px){
+    .perfil_container{
+        width: 800px;
+        
+    }
+
+    .btn_perfil{
+        width: 50%;
+        margin: 20px auto;
+        margin-bottom: 30px;
+    }
+    .btn_perfil a{
+        width: 45%;
+    }
+}
+
+@media (max-width:1000px) and (min-width:641px){
+    .perfil_container{
+
+        width: 600px;
+    }
+    .btn_perfil a{
+
+        font-size: 18px;
+    }
+}
+
+@media (max-width:641px) and (min-width:300px){
+    .perfil_container{
+        width: 300px;
+    }
+
+    footer{
+        border:3px solid #F2EBDB;
+        border-radius: 8px;
+        width: 250px;
+        height: 70px;
+        margin-top: 70px;
+    }
+
+    .btn_perfil{
+        margin: 20px auto;
+        width: 70%;
+    }
+    .btn_perfil a{
+        margin-bottom: 5px;
+        width: 70%;
+        line-height: 1px;
+        padding: 18px;
+        height: 20px;
+        font-size: 15px;
+        background: #FCB447;
+        border-radius: 40px;
+    }
+
+    #perfil h2{
+        font-size: 25px;
+    }
+
+    #perfil h3{
+        font-size: 18px;
+    }
+
+    #perfil .perfil_cider p{
+        font-size: 29px;
+    }
+
+   
+}
+/***********Contacto************/
+@media (max-width:2024px) and (min-width:1413px){
+    #contact{
+        width: 1000px;
+        height: 600px;
+       
+    }
+    .formCont h2{
+       
+    } 
+    .formCont{
+        width: 50%;
+         margin: 0 auto;
+     }
+     #text{
+        width:40%;
+        height: 480px;
+        background-size: 80%;
+    }
+}
+@media (max-width:1412px) and (min-width:1280px){
+    #contact{
+        width: 850px;
+        
+} 
+    
+    .formCont{
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    
+    .cont{
+        width: 450px;
+        display: inline-block;
+    }
+    #text{
+        width:40%;
+        height: 480px;
+        background-position: 130px 10px;
+        background-size: 80%;
+        height: 400px;
+    }
+
+
+}
+
+@media (max-width:1279px) and (min-width:1126px){
+    #contact{
+        width: 800px;
+        height: 600px;
+        
+    } 
+
+    .formCont{
+        width: 55%;
+    }
+    .cont{
+       width: 500px;
+       margin-left: -20px;
+    }
+    #text{
+        width:30%;
+
+        background-position: 130px 10px;
+        background-size: 900px;
+        height: 400px;
+    }
+}
+
+@media (max-width:1125px) and (min-width:944px){
+    #contact{
+        width: 900px;
+        
+    } 
+    
+    .formCont{
+        width:50%;
+        margin: 0 auto;
+    }
+    #text{
+        width: 40%;
+        margin-top: 0;
+        background-position: 200px 100px;
+        background-size: 80%;
+        margin-bottom: 150px;
+    }
+    #text p{
+        margin-top: -116px;
+    }
+    
+    .cont{
+       width: 600px;
+       margin-left: -65px;
+    }
+
+}
+@media (max-width:943px) and (min-width:641px){
+     #contact{
+        width: 700px;
+        height: 550px;
+        overflow: hidden;
+  }
+    
+    .formCont{
+        width:60%;
+        margin: 0 auto;
+        float: none;
+        border-right:none;
+        
+    }
+   #text{
+        background: none;
+        float: none;
+        width: 58%;
+        height: 10px;
+        display: inline-block;
+        position: relative;
+        top:-120px;
+        margin: 0 auto;
+    }
+    
+   
+    footer{
+        margin-top: 100px;
+        
+    }
+}
+
+@media (max-width:640px) and (min-width:300px){
+    /*body{
+        height: 40%;
+    }*/
+    
+    #contact{
+        width: 100%;
+        height: 480px;
+        overflow: hidden;
+        
+   }
+    .formCont{
+        width:100%;
+        height: 100%;
+        margin: 0 auto;
+        float: none;
+        border-right:none;
+        
+  }
+    
+    #text{
+        display: none;
+   }
+    
+    .cont{
+      width: 100%;
+      display: inline-block;
+     }
+     
+     .cont input{
+         font-size: 14px;
+     }
+    footer{
+        margin-top:40px;
+        
+    }
+  
+}
+
+
+/*@media (max-width:943px) and (min-width:641px){
+    #contact{
+        width: 500px;
+        height: 800px;
+       overflow: hidden;
+       background: teal;
+       
+        
+    } 
+    .formCont h2{
+         margin: 0 auto;
+    } 
+    .formCont{
+        width:100%;
+        margin: 0 auto;
+        float: none;
+        
+       border-right: none;
+    
+        
+    }
+
+    #text{
+        background: none;
+      float: none; 
+        
+          
+        /*position: relative;
+        top:10%;
+        width: 50%;
+       
+       
+    }
+    #text p{
+        float: none;
+        position: absolute;
+        /*float: none;
+        margin-top: -700px;
+        padding: 10px;
+        width: 500px;
+        
+        
+    }
+
+}
+
+@media (max-width:640px) and (min-width:300px){
+    #contact{
+        width: 400px;
+        height: 500px;
+        background: tomato;
+        position: initial;
+        
+    } 
+    .formCont h2{
+        width: 100%;
+        margin: 0 auto;
+    } 
+    .formCont{
+        width:400px;
+        float: none;
+        border-right: none;
+    }
+    .cont{
+        width: 465px;
+       
+        margin-left: -43px;
+        
+    }
+
+    #text{
+        width: 100%;
+       margin: 0 auto;
+       position: relative;
+       left: 5px;
+       
+       margin-bottom: -350px;
+        
+
+    }
+    #text p{
+        margin-top: -600px;
+        padding: 30px;
+        width: 390px;
+        
+    }
+
+}*/
+/**********SEARCH**********/
+@media (max-width:1069px) and (min-width:864px){
+    #sm{
+        width: 600px;
+
+    }
+    .search_mo{
+        width: 600px; 
+    }
+
+    #sm p{
+        width: 80%;
+    }
+} 
+
+@media (max-width:863px) and (min-width:641px){
+    #sm{
+        width: 450px;
+    }
+    .search_mo{
+        width:100%; 
+    }
+
+    #sm p{
+        font-size: 25px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:640px) and (min-width:300px){
+    #sm{
+        width: 300px;
+
+    }
+    .search_mo{
+        width: 100%;
+       
+    }
+
+    .search_mo a{
+        font-size: 25px;
+       
+    }
+    .search_mo h2{
+        font-size: 40px; 
+    }
+
+    #sm p{
+        font-size: 24px;
+        width: 100%;
+    }
+    
+    #menu{
+       width: 100%;
+       height: 100%;
+    }
+    
+    #menu ul li{
+       font-size: 35px;
+       
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
